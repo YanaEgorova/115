@@ -1,0 +1,35 @@
+
+.info {
+  padding: 5rem 0;
+  text-align: center;
+}
+.info .text {
+  position: relative;
+}
+.info .text::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 30rem;
+  height: 30rem;
+  background-color: var(--first-brand-color);
+  z-index: -1;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+.info .text.bold::before {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+
+  .info .block {
+display: flex;
+align-items: center;
+justify-content: space-between;
+  }
+  .info .text {
+    margin: 0;
+  }
+}

@@ -1,0 +1,24 @@
+
+.hero {
+  padding: 10rem 0;
+  text-align: center;
+}
+.hero .title {
+  position: relative;
+}
+.hero .title::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 30rem;
+  height: 30rem;
+  background-color: var(--first-brand-color);
+  z-index: -1;
+  border-radius: 50%;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%)
+}
+@media screen and (min-width: 1024px) {
+  
+}

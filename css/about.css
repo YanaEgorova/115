@@ -1,0 +1,35 @@
+
+.about {
+  padding: 5rem 0;
+  text-align: center;
+}
+.about .text {
+  position: relative;
+}
+.about .text::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 30rem;
+  height: 30rem;
+  background-color: var(--first-brand-color);
+  z-index: -1;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+.about .text.bold::before {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .about .block {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .about .text {
+    margin: 0;
+  }
+}
